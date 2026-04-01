@@ -2,6 +2,10 @@ name = "secure-worker"
 main = "src/index.js"
 compatibility_date = "2026-03-31"
 
+routes = [
+  { pattern = "tunnel.poch.uk/secure*", zone_name = "poch.uk" }
+]
+
 [[r2_buckets]]
 binding = "FLAGS"
 bucket_name = "country-flags"
